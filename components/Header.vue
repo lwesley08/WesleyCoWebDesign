@@ -1,3 +1,19 @@
 <template>
-  Hiiiiiiiii
+  <div class="header__container">
+    <img src="/WesleyCoLogo.svg"/>
+  </div>
 </template>
+<style lang="scss">
+  .header {
+    &__container {
+      height: 75px;
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 6px;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1.5px solid black;
+    }
+  }
+   
+</style>
