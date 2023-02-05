@@ -21,7 +21,6 @@
   padding: 0px 80px;
   display: flex;
   justify-content: space-between;
-  align-content: center;
   align-items: center;
 
   &__text-container {

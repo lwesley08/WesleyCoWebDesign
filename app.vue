@@ -1,6 +1,7 @@
 <template>
  <Header/>
  <Hero/>
+ <AboutMe/>
 </template>
 
 <style lang="scss">
