@@ -15,42 +15,69 @@
 .portfolio {
   @include contentContainer;
   min-height: 1000px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   border-bottom: solid black 1.5px;
+
+  @include tabletAndAbove {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  @include laptopAndAbove {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
 
   &__title {
     font-family: Raleway;
-    font-size: 55px;
     font-weight: 300;
-    line-height: 66px;
     letter-spacing: 0.015em;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    font-size: 35px;
+    line-height: 48px;
+
+    @include tabletAndAbove {
+      font-size: 55px;
+      line-height: 66px;
+      margin-bottom: 60px;
+    }
   }
 
   &__project-container {
     display: grid;
-    grid-template: repeat(3, 220px) / repeat(4, auto);
-    column-gap: 20px;
-    row-gap: 30px;
+    grid-template-rows: repeat(5, 300px);
+    row-gap: 20px;
+
+    @include tabletAndAbove {
+      grid-template: repeat(3, 220px) / repeat(4, auto);
+      column-gap: 20px;
+      row-gap: 30px;
+    }
   }
 
   &__project-thumbnail {
     border: 1.5px solid black;
 
     &--one {
-      grid-area: 1 / 1 / span 3 / span 1;
+      @include tabletAndAbove {
+        grid-area: 1 / 1 / span 3 / span 1;
+      }
     }
 
     &--two {
-      grid-area: 1 / 2 / span 1 / span 3;
+      @include tabletAndAbove {
+        grid-area: 1 / 2 / span 1 / span 3;
+      }
     }
 
     &--three,
     &--four,
     &--five {
-      grid-row: 2 / span 2;
+      @include tabletAndAbove {
+        grid-row: 2 / span 2;
+      }
     }
   }
 }
