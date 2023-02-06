@@ -13,10 +13,10 @@
 
 <style lang="scss" scoped>
 .portfolio {
-  box-sizing: border-box;
-  width: 100%;
+  @include contentContainer;
   min-height: 1000px;
-  padding: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   border-bottom: solid black 1.5px;
 
   &__title {

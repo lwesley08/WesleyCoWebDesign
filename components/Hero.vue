@@ -15,10 +15,8 @@
 
 <style lang="scss" scoped>
 .hero {
-  box-sizing: border-box;
-  width: 100%;
+  @include contentContainer;
   height: 75vh;
-  padding: 0px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;

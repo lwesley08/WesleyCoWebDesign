@@ -12,10 +12,10 @@
 
 <style lang="scss" scoped>
 .footer {
+  @include contentContainer;
   min-height: 415px;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 80px 80px 20px;
+  padding-top: 80px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

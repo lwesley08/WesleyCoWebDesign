@@ -1,0 +1,39 @@
+@mixin laptopAndAbove {
+  @media only screen and (min-width: $breakpoint-laptop) {
+    @content;
+  }
+}
+
+@mixin desktopAndAbove {
+  @media only screen and (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+@mixin tabletAndAbove {
+  @media only screen and (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin contentContainer {
+  padding-right: 40px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  width: 100%;
+
+  @include tabletAndAbove {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  @include laptopAndAbove {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+  
+  @include desktopAndAbove {
+    padding-right: calc((100% - 1000px) / 2);
+    padding-left: calc((100% - 1000px) / 2);
+  }
+}

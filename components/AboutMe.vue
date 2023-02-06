@@ -17,11 +17,11 @@
 
 <style lang="scss" scoped>
 .about {
+  @include contentContainer;
   background-color: $sassy-sage;
-  box-sizing: border-box;
-  width: 100%;
   min-height: 660px;
-  padding: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   display: flex;
   justify-content: space-between;
 
