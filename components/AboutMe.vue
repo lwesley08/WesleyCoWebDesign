@@ -37,12 +37,17 @@
     padding-bottom: 80px;
     padding-top: 80px;
     justify-content: space-between;
+    align-items: unset;
   }
 
   &__text-container {
     color: $falling-petals;
     max-width: 660px;
     order: 2;
+
+    @include laptopAndAbove {
+      order: unset;
+    }
   }
 
   &__title {
