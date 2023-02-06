@@ -33,6 +33,7 @@
     font-weight: 300;
     line-height: 61px;
     letter-spacing: 0.125em;
+    margin-bottom: 50px;
 
     &--accent {
       display: inline-block;

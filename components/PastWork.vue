@@ -26,7 +26,6 @@
     line-height: 66px;
     letter-spacing: 0.015em;
     text-align: center;
-    margin: 0px;
     margin-bottom: 60px;
   }
 

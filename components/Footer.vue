@@ -32,7 +32,6 @@
     font-weight: 300;
     line-height: 50px;
     letter-spacing: 0.015em;
-    margin: 0px;
   }
 
   &__cta {

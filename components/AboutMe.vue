@@ -36,6 +36,7 @@
     font-weight: 300;
     line-height: 66px;
     letter-spacing: 0.015em;
+    margin-bottom: 35px;
   }
 
   &__description {
