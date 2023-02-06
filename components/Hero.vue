@@ -4,7 +4,7 @@
       <h2 class="hero__title">Modern Designs with a <span class="hero__title--accent">Classic Flair</span></h2>
       <div class="hero__cta-container">
         <button class="hero__cta hero__cta--portfolio">Past Work</button>
-        <button class="hero__cta hero__cta--container">Get In Touch</button>
+        <button class="hero__cta hero__cta--contact">Get In Touch</button>
       </div>
     </div>
     <div class="hero__image-container">
@@ -54,7 +54,6 @@
     font-size: 23px;
     font-weight: 300;
     line-height: 27px;
-    letter-spacing: 0em;
 
     &--portfolio {
       margin-right: 30px;
@@ -63,7 +62,7 @@
       box-shadow: 6px 6px 0px 0px #000000;
     }
 
-    &--container {
+    &--contact {
       color: $falling-petals;
       background: black;
       border: 1.5px solid $falling-petals;

@@ -2,6 +2,8 @@
  <Header/>
  <Hero/>
  <AboutMe/>
+ <PastWork/>
+ <Footer/>
 </template>
 
 <style lang="scss">
