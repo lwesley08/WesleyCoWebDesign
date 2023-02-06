@@ -50,7 +50,7 @@
     grid-template-rows: repeat(5, 300px);
     row-gap: 20px;
 
-    @include tabletAndAbove {
+    @include laptopAndAbove {
       grid-template: repeat(3, 220px) / repeat(4, auto);
       column-gap: 20px;
       row-gap: 30px;
@@ -61,13 +61,13 @@
     border: 1.5px solid black;
 
     &--one {
-      @include tabletAndAbove {
+      @include laptopAndAbove {
         grid-area: 1 / 1 / span 3 / span 1;
       }
     }
 
     &--two {
-      @include tabletAndAbove {
+      @include laptopAndAbove {
         grid-area: 1 / 2 / span 1 / span 3;
       }
     }
@@ -75,7 +75,7 @@
     &--three,
     &--four,
     &--five {
-      @include tabletAndAbove {
+      @include laptopAndAbove {
         grid-row: 2 / span 2;
       }
     }
