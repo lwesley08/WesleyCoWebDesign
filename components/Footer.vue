@@ -15,7 +15,7 @@
   min-height: 415px;
   box-sizing: border-box;
   width: 100%;
-  padding: 0px 80px;
+  padding: 80px 80px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,10 +32,12 @@
     font-weight: 300;
     line-height: 50px;
     letter-spacing: 0.015em;
+    margin: 0px;
   }
 
   &__cta {
     width: 400px;
+    margin-top: 30px;
     padding-top: 14px;
     padding-bottom: 19px;
     border-radius: 0px;
