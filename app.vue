@@ -20,4 +20,9 @@
   h2, h3, p {
     margin: 0px;
   }
+
+  a {
+    color: unset;
+    text-decoration: none;
+  }
 </style>

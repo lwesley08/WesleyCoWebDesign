@@ -2,7 +2,7 @@
   <div class="footer">
     <div class="footer__content-container">
       <h3 class="footer__cta-text">Interested in working together? Let’s Chat!</h3>
-      <button class="footer__cta">Get In Touch</button>
+      <a href="mailto:lwesley@proton.me"><button class="footer__cta">Get In Touch</button></a>
     </div>
     <div class="footer__copyright">
       <p>Copyright Wesley & Co. 2023</p>
@@ -63,6 +63,7 @@
     background: black;
     border: 1.5px solid $falling-petals;
     box-shadow: 6px 6px 0px 0px #000000;
+    cursor: pointer;
 
     @include tabletAndAbove {
       width: 400px;

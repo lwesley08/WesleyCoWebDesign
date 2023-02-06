@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio">
+  <div class="portfolio" id="portfolio">
     <h3 class="portfolio__title">Past Work</h3>
     <div class="portfolio__project-container">
       <div class="portfolio__project-thumbnail portfolio__project-thumbnail--one"></div>

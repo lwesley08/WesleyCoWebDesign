@@ -3,8 +3,8 @@
     <div class="hero__text-container">
       <h2 class="hero__title">Modern Designs with a <span class="hero__title--accent">Classic Flair</span></h2>
       <div class="hero__cta-container">
-        <button class="hero__cta hero__cta--portfolio">Past Work</button>
-        <button class="hero__cta hero__cta--contact">Get In Touch</button>
+        <a href="#portfolio"><button class="hero__cta hero__cta--portfolio">Past Work</button></a>
+        <a href="mailto:lwesley@proton.me"><button class="hero__cta hero__cta--contact">Get In Touch</button></a>
       </div>
     </div>
     <div class="hero__image-container">
@@ -86,6 +86,7 @@
     font-size: 23px;
     font-weight: 300;
     line-height: 27px;
+    cursor: pointer;
 
     @include tabletAndAbove {
       width: 213px;
