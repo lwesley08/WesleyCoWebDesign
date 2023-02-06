@@ -54,6 +54,10 @@
     letter-spacing: 0.125em;
     margin-bottom: 30px;
 
+    @include themify() {
+      color: themed("text-color-primary");
+    }
+
     @include tabletAndAbove {
       font-size: 45px;
       line-height: 61px;
@@ -104,14 +108,17 @@
     }
 
     &--contact {
-      color: $falling-petals;
       background: black;
       border: 1.5px solid $falling-petals;
       box-shadow: 6px 6px 0px 0px #000000;
+
+      @include themify() {
+        color: themed("text-color-secondary");
+      }
     }
   }
 
-  &__image{
+  &__image {
     max-width: 100%;
   }
 }

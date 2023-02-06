@@ -1,28 +1,36 @@
 <template>
- <Header/>
- <Hero/>
- <AboutMe/>
- <PastWork/>
- <Footer/>
+  <div class="theme-light">
+    <Header />
+    <Hero />
+    <AboutMe />
+    <PastWork />
+    <Footer />
+  </div>
 </template>
 
 <style lang="scss">
-  body {
-    margin: 0;
-    background-color: $background-color; // template
-  }
+body {
+  margin: 0;
 
-  body, html {
-    height: 100%;
-    width: 100%;
+  @include themify() {
+    background-color: themed("background-color-primary");
   }
+}
 
-  h2, h3, p {
-    margin: 0px;
-  }
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
 
-  a {
-    color: unset;
-    text-decoration: none;
-  }
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
 </style>

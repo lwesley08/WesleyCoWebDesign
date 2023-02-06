@@ -59,7 +59,6 @@
     font-weight: 300;
     line-height: 27px;
     letter-spacing: 0em;
-    color: $falling-petals;
     background: black;
     border: 1.5px solid $falling-petals;
     box-shadow: 6px 6px 0px 0px #000000;
@@ -67,6 +66,10 @@
 
     @include tabletAndAbove {
       width: 400px;
+    }
+
+    @include themify() {
+      color: themed("text-color-secondary");
     }
   }
 

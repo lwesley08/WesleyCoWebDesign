@@ -18,7 +18,11 @@
 <style lang="scss" scoped>
 .about {
   @include contentContainer;
-  background-color: $sassy-sage;
+
+  @include themify() {
+    background-color: themed("background-color-secondary");
+  }
+
   min-height: 660px;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -41,12 +45,15 @@
   }
 
   &__text-container {
-    color: $falling-petals;
     max-width: 660px;
     order: 2;
 
     @include laptopAndAbove {
       order: unset;
+    }
+
+    @include themify() {
+      color: themed("text-color-secondary");
     }
   }
 
@@ -86,7 +93,10 @@
     width: 244px;
     height: 244px;
     border-radius: 50%;
-    background-color: $falling-petals;
+
+    @include themify() {
+      background-color: themed("background-color-primary");
+    }
   }
 }
 </style>
