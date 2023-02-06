@@ -38,6 +38,10 @@
     font-size: 35px;
     line-height: 48px;
 
+    @include themify() {
+      color: themed("text-color-primary");
+    }
+
     @include tabletAndAbove {
       font-size: 55px;
       line-height: 66px;

@@ -42,6 +42,10 @@
     line-height: 40px;
     text-align: center;
 
+    @include themify() {
+      color: themed("text-color-primary");
+    }
+
     @include tabletAndAbove {
       font-size: 42px;
       line-height: 50px;
@@ -80,6 +84,10 @@
     line-height: 29px;
     letter-spacing: 0.015em;
     text-align: center;
+
+    @include themify() {
+      color: themed("text-color-primary");
+    }
 
     @include laptopAndAbove {
       text-align: left;

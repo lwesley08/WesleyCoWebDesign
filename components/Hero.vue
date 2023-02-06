@@ -102,6 +102,10 @@
       border: 1.5px solid black;
       box-shadow: 6px 6px 0px 0px #000000;
 
+      @include themify() {
+        color: themed("text-color-primary");
+      }
+
       @include tabletAndAbove {
         margin-right: 30px;
       }
