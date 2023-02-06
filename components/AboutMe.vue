@@ -20,31 +20,61 @@
   @include contentContainer;
   background-color: $sassy-sage;
   min-height: 660px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @include tabletAndAbove {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  @include laptopAndAbove {
+    flex-direction: row;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    justify-content: space-between;
+  }
 
   &__text-container {
     color: $falling-petals;
     max-width: 660px;
+    order: 2;
   }
 
   &__title {
     font-family: Raleway;
-    font-size: 55px;
     font-weight: 300;
-    line-height: 66px;
+    font-size: 35px;
+    line-height: 48px;
     letter-spacing: 0.015em;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include tabletAndAbove {
+      font-size: 55px;
+      line-height: 61px;
+      margin-bottom: 35px;
+      text-align: left;
+    }
   }
 
   &__description {
     font-family: Raleway;
-    font-size: 24px;
     font-weight: 400;
-    line-height: 29px;
     letter-spacing: 0.015em;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: justify;
+
+    @include tabletAndAbove {
+      font-size: 24px;
+      line-height: 29px;
+      text-align: left;
+    }
   }
 
   &__img {
