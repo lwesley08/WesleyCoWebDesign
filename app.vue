@@ -1,5 +1,5 @@
 <template>
-  <div class="theme-light">
+  <div :class="themeClass">
     <Header />
     <Hero />
     <AboutMe />
@@ -34,3 +34,14 @@ a {
   text-decoration: none;
 }
 </style>
+
+<script lang="ts" setup>
+import { useThemeStore } from './stores/theme';
+import { storeToRefs } from 'pinia';
+import { ComputedRef } from 'vue';
+
+const themeStore = useThemeStore();
+const { currentTheme } = storeToRefs(themeStore);
+
+const themeClass: ComputedRef<string> = computed(() => `theme-${currentTheme.value}`);
+</script>
