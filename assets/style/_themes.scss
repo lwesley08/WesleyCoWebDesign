@@ -3,6 +3,12 @@ $light-theme-map: (
   "background-color-secondary": $sassy-sage,  
   "text-color-primary": black,
   "text-color-secondary": $falling-petals,
+  "button-primary-background": black,
+  "button-secondary-background": transparent,
+  "button-primary-border": 1.5px solid $falling-petals,
+  "button-secondary-border":  1.5px solid black,
+  "button-border-radius": 0px,
+  "section-border": 1.5px solid black,
 );
 
 $themes: (

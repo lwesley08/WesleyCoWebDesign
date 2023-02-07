@@ -57,17 +57,21 @@
     margin-top: 30px;
     padding-top: 14px;
     padding-bottom: 19px;
-    border-radius: 0px;
     font-family: Raleway;
     font-size: 23px;
     font-weight: 300;
     line-height: 27px;
     letter-spacing: 0em;
-    background: black;
-    border: 1.5px solid $falling-petals;
     box-shadow: 6px 6px 0px 0px #000000;
     cursor: pointer;
 
+    @include themify() {
+      border-radius: themed("button-border-radius");
+      color: themed("btext-color-secondary");
+      background: themed("button-primary-background");
+      border: themed("button-primary-border");
+    }
+    
     @include tabletAndAbove {
       width: 400px;
     }

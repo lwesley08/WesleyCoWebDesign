@@ -12,7 +12,10 @@
       padding-bottom: 6px;
       display: flex;
       justify-content: center;
-      border-bottom: 1.5px solid black;
+      
+      @include themify() {
+        border-bottom: themed("section-border");
+      }
     }
   }
    

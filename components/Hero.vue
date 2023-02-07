@@ -85,12 +85,15 @@
     width: 100%;
     padding-top: 14px;
     padding-bottom: 19px;
-    border-radius: 0px;
     font-family: Raleway;
     font-size: 23px;
     font-weight: 300;
     line-height: 27px;
     cursor: pointer;
+
+    @include themify() {
+      border-radius: themed("button-border-radius");
+    }
 
     @include tabletAndAbove {
       width: 213px;
@@ -98,12 +101,12 @@
 
     &--portfolio {
       margin-bottom: 20px;
-      background: none;
-      border: 1.5px solid black;
       box-shadow: 6px 6px 0px 0px #000000;
 
       @include themify() {
         color: themed("text-color-primary");
+        background: themed("button-secondary-background");
+        border: themed("button-secondary-border");
       }
 
       @include tabletAndAbove {
@@ -113,11 +116,12 @@
 
     &--contact {
       background: black;
-      border: 1.5px solid $falling-petals;
       box-shadow: 6px 6px 0px 0px #000000;
 
       @include themify() {
         color: themed("text-color-secondary");
+        background: themed("button-primary-background");
+        border: themed("button-primary-border");
       }
     }
   }

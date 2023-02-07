@@ -17,7 +17,10 @@
   min-height: 1000px;
   padding-top: 40px;
   padding-bottom: 40px;
-  border-bottom: solid black 1.5px;
+  
+  @include themify(){
+    border-bottom: themed("section-border");
+  }
 
   @include tabletAndAbove {
     padding-bottom: 60px;
@@ -62,7 +65,9 @@
   }
 
   &__project-thumbnail {
-    border: 1.5px solid black;
+    @include themify(){
+      border: themed("section-border")
+    }
 
     &--one {
       @include laptopAndAbove {
