@@ -3,17 +3,29 @@
     <h3 class="portfolio__title">Past Work</h3>
     <div class="portfolio__project-container">
       <div class="portfolio__project-thumbnail portfolio__project-thumbnail--one">
-
+        <p class="portfolio__project-learn-more">
+          <span class="mdi mdi-shimmer"></span>
+          Learn More
+        </p>
       </div>
       <div class="portfolio__project-thumbnail portfolio__project-thumbnail--two">
-        Meditation App Landing Page
-        Learn More
+        <p class="portfolio__project-learn-more">
+          <span class="mdi mdi-shimmer"></span>
+          Learn More
+        </p>
       </div>
       <div class="portfolio__project-thumbnail portfolio__project-thumbnail--three">
-
+        <p class="portfolio__project-learn-more">
+          <span class="mdi mdi-shimmer"></span>
+          Learn More
+        </p>
       </div>
-      <div class="portfolio__project-thumbnail portfolio__project-thumbnail--four"></div>
-      <!-- <div class="portfolio__project-thumbnail portfolio__project-thumbnail--five"></div> -->
+      <div class="portfolio__project-thumbnail portfolio__project-thumbnail--four">
+        <p class="portfolio__project-learn-more">
+          <span class="mdi mdi-shimmer"></span>
+          Learn More
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -21,7 +33,7 @@
 <style lang="scss" scoped>
 .portfolio {
   @include contentContainer;
-  min-height: 1000px;
+  min-height: 900px;
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -61,7 +73,7 @@
 
   &__project-container {
     display: grid;
-    grid-template-rows: repeat(5, 300px);
+    grid-template-rows: repeat(4, 300px);
     row-gap: 20px;
 
     @include laptopAndAbove {
@@ -71,55 +83,51 @@
     }
   }
 
+  &__project-learn-more {
+    visibility: hidden;
+
+    .portfolio__project-thumbnail:hover & {
+      visibility: visible;
+    }
+  }
+
   &__project-thumbnail {
     @include themify() {
       border: themed("section-border")
     }
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    @include themify() {
+      color: themed("text-color-secondary");
+      font-size: 30px;
+      font-family: Raleway;
+    }
 
     &--one {
-      background-image: url("../public/Conference.png");
-      background-size: 100%;
+      @include backgroundImage("../public/Conference.png");
 
       @include laptopAndAbove {
         grid-area: 1 / 1 / span 3 / span 2;
       }
-
-      &:hover {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../public/Conference.png");
-      }
     }
 
     &--two {
-      background: url("../public/Mendio.png");
-      background-size: 100%;
+      @include backgroundImage("../public/Mendio.png");
 
       @include laptopAndAbove {
         grid-area: 1 / 3 / span 1 / span 2;
       }
-
-      &:hover {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../public/Mendio.png");
-      }
     }
-    
+
     &--three {
-      background: url("../public/TSDMobile.png");
-      background-size: 100%;
-
-      &:hover {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../public/TSDMobile.png");
-      }
+      @include backgroundImage("../public/TSDMobile.png");
     }
-    
-    &--four {
-      background: url("../public/DemoDispensary.png");
-      background-size: 100%;
 
-      &:hover {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../public/DemoDispensary.png");
-      }
+    &--four {
+      @include backgroundImage("../public/DemoDispensary.png");
     }
 
     &--three,
