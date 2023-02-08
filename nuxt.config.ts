@@ -20,4 +20,7 @@ export default defineNuxtConfig({
   modules: [
     '@pinia/nuxt',
   ],
+  css: [
+    '@mdi/font/css/materialdesignicons.min.css'
+  ]
 })
