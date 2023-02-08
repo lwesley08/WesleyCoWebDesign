@@ -2,15 +2,16 @@
   <div class="about">
     <div class="about__text-container">
       <h2 class="about__title">About Me</h2>
-      <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore
-        magna aliqua. In metus vulputate eu scelerisque felis imperdiet. Sed sed risus pretium quam vulputate dignissim
-        suspendisse in. Tempus urna et pharetra pharetra massa massa ultricies mi. Vel risus commodo viverra maecenas
-        accumsan. Elit pellentesque habitant morbi tristique. Senectus et netus et malesuada fames ac. Enim ut tellus
-        elementum sagittis vitae et leo duis. Semper risus in hendrerit gravida rutrum.</p>
+      <p class="about__description">
+        Hi. I’m Liberty Wesley, a web developer and designer with 6 years experience designing beautiful, mobile-ready
+        websites for business of all kinds. Send me an email and let’s talk about creating a website as unique as your
+        business.
+      </p>
     </div>
     <div class="about__img-container">
-      <div class="about__img"></div>
+      <div class="about__img">
+        <img src="../public/Avatar.png" />
+      </div>
     </div>
   </div>
 </template>
@@ -23,7 +24,7 @@
     background-color: themed("background-color-secondary");
   }
 
-  min-height: 660px;
+  min-height: 500px;
   padding-top: 40px;
   padding-bottom: 40px;
   display: flex;
@@ -94,8 +95,8 @@
     height: 244px;
     border-radius: 50%;
 
-    @include themify() {
-      background-color: themed("background-color-primary");
+    img {
+      width: 100%;
     }
   }
 }
