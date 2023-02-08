@@ -10,6 +10,9 @@
 </template>
 
 <style lang="scss">
+* {
+  transition: color 2000ms, background-color 2000ms;
+}
 body {
   margin: 0;
 

@@ -10,6 +10,7 @@ $light-theme-map: (
   "button-border-radius": 0px,
   "button-box-shadow": 6px 6px 0px 0px #000000,
   "section-border": 1.5px solid black,
+  "logo-filter": unset,
 );
 
 $dark-theme-map: (
@@ -24,6 +25,7 @@ $dark-theme-map: (
   "button-border-radius": 0px,
   "button-box-shadow": none,
   "section-border": 1.5px solid $falling-petals,
+  "logo-filter": invert(100%)
 );
 
 $themes: (

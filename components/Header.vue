@@ -15,6 +15,9 @@
       
       @include themify() {
         border-bottom: themed("section-border");
+        img {
+          filter: themed("logo-filter");
+        }
       }
     }
   }
