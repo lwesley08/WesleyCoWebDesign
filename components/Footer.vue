@@ -62,22 +62,24 @@
     font-weight: 300;
     line-height: 27px;
     letter-spacing: 0em;
-    box-shadow: 6px 6px 0px 0px #000000;
     cursor: pointer;
+
+    @include buttonAnimation();
 
     @include themify() {
       border-radius: themed("button-border-radius");
-      color: themed("btext-color-secondary");
       background: themed("button-primary-background");
       border: themed("button-primary-border");
-    }
-    
-    @include tabletAndAbove {
-      width: 400px;
+      color: themed("text-color-secondary");
+      box-shadow: themed("button-box-shadow");
+
+      &:hover {
+        background: lighten(themed("button-primary-background"), 14%);
+      }
     }
 
-    @include themify() {
-      color: themed("text-color-secondary");
+    @include tabletAndAbove {
+      width: 400px;
     }
   }
 

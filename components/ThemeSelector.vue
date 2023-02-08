@@ -58,11 +58,11 @@
 
     &--open {
       display: initial;
-      animation: animate-fade-in .75s linear .25s 1 backwards;
+      animation: fadeIn .75s linear .25s 1 backwards;
     }
 
     &--closing {
-      animation: animate-fade-out .75s linear 1 backwards;
+      animation: fadeOut .75s linear 1 backwards;
       display: initial;
       opacity: 0;
     }
@@ -82,32 +82,6 @@
 
     .theme__option--selected & {
       opacity: 100;
-    }
-  }
-
-  @keyframes pulse {
-    to {
-      box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
-    }
-  }
-
-  @keyframes animate-fade-in {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes animate-fade-out {
-    0% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: 0;
     }
   }
 }

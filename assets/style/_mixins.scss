@@ -1,3 +1,5 @@
+// breakpoints
+
 @mixin laptopAndAbove {
   @media only screen and (min-width: $breakpoint-laptop) {
     @content;
@@ -15,6 +17,8 @@
     @content;
   }
 }
+
+// content sizing
 
 @mixin contentContainer {
   padding-right: 40px;
@@ -38,4 +42,12 @@
   }
 }
 
+// base styles
+@mixin buttonAnimation {
+  &:active {
+    box-shadow: none;
+    transform: translateX(6px);
+    transform: translateY(6px);
+  }
+}
 

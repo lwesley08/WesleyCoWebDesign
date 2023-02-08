@@ -4,24 +4,26 @@ $light-theme-map: (
   "text-color-primary": black,
   "text-color-secondary": $falling-petals,
   "button-primary-background": black,
-  "button-secondary-background": transparent,
+  "button-secondary-background": $falling-petals,
   "button-primary-border": 1.5px solid $falling-petals,
   "button-secondary-border":  1.5px solid black,
   "button-border-radius": 0px,
+  "button-box-shadow": 6px 6px 0px 0px #000000,
   "section-border": 1.5px solid black,
 );
 
 $dark-theme-map: (
-  "background-color-primary": $sassy-sage,
-  "background-color-secondary": $sassy-sage,  
-  "text-color-primary": black,
+  "background-color-primary": $dark-slate,
+  "background-color-secondary": #586336,  
+  "text-color-primary": $falling-petals,
   "text-color-secondary": $falling-petals,
-  "button-primary-background": black,
-  "button-secondary-background": transparent,
-  "button-primary-border": 1.5px solid $falling-petals,
-  "button-secondary-border":  1.5px solid black,
+  "button-primary-background": #586336,
+  "button-secondary-background": $dark-slate,
+  "button-primary-border": 1.5px solid $dark-slate,
+  "button-secondary-border":  1.5px solid $falling-petals,
   "button-border-radius": 0px,
-  "section-border": 1.5px solid black,
+  "button-box-shadow": none,
+  "section-border": 1.5px solid $falling-petals,
 );
 
 $themes: (

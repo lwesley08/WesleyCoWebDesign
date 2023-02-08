@@ -65,6 +65,7 @@
     }
 
     &--accent {
+      animation: fadeIn 2500ms 100ms ease both;
       display: inline-block;
       font-family: Tangerine;
       font-weight: 400;
@@ -91,6 +92,8 @@
     line-height: 27px;
     cursor: pointer;
 
+    @include buttonAnimation();
+
     @include themify() {
       border-radius: themed("button-border-radius");
     }
@@ -101,12 +104,16 @@
 
     &--portfolio {
       margin-bottom: 20px;
-      box-shadow: 6px 6px 0px 0px #000000;
 
       @include themify() {
         color: themed("text-color-primary");
         background: themed("button-secondary-background");
         border: themed("button-secondary-border");
+        box-shadow: themed("button-box-shadow");
+
+        &:hover {
+          background: darken(themed("button-secondary-background"), 8%);
+        }
       }
 
       @include tabletAndAbove {
@@ -115,19 +122,25 @@
     }
 
     &--contact {
-      background: black;
-      box-shadow: 6px 6px 0px 0px #000000;
-
       @include themify() {
         color: themed("text-color-secondary");
         background: themed("button-primary-background");
         border: themed("button-primary-border");
+        box-shadow: themed("button-box-shadow");
+
+        &:hover {
+          background: lighten(themed("button-primary-background"), 14%);
+        }
       }
     }
   }
 
   &__image {
     max-width: 100%;
+
+    @mixin laptopAndAbove() {
+      animation: fadeInRight 1000ms 200ms both;
+    }
   }
 }
 </style>
