@@ -123,6 +123,7 @@ let isClosing = ref(false);
 
 function selectTheme(key: string) {
   currentTheme.value = key;
+  isOpen.value = false;
 }
 
 function openThemeSelector() {

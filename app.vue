@@ -5,6 +5,7 @@
     <AboutMe />
     <PastWork />
     <Footer />
+    <ThemeSelector/>
   </div>
 </template>
 
