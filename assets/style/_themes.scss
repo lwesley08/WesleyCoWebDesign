@@ -11,6 +11,7 @@ $light-theme-map: (
   "button-box-shadow": 6px 6px 0px 0px #000000,
   "section-border": 1.5px solid black,
   "logo-filter": unset,
+  "accent-text-animation": fadeIn 2500ms 100ms ease both
 );
 
 $dark-theme-map: (
@@ -25,12 +26,30 @@ $dark-theme-map: (
   "button-border-radius": 0px,
   "button-box-shadow": none,
   "section-border": 1.5px solid $falling-petals,
-  "logo-filter": invert(100%)
+  "logo-filter": invert(100%),
+  "accent-text-animation": fadeIn 2500ms 100ms ease both
+);
+
+$glow-theme-map: (
+  "background-color-primary": black,
+  "background-color-secondary": $electric-blue-dark,  
+  "text-color-primary": $falling-petals,
+  "text-color-secondary": $falling-petals,
+  "button-primary-background": #0009E6,
+  "button-secondary-background": black,
+  "button-primary-border": unset,
+  "button-secondary-border":  1px solid $electric-blue-dark,
+  "button-border-radius": 10px,
+  "button-box-shadow": 6px 6px 10px 0px rgba(136, 144, 214, 0.25),
+  "section-border": unset,
+  "logo-filter": invert(100%),
+  "accent-text-animation": glow 1s ease-in-out infinite alternate,
 );
 
 $themes: (
   "light": $light-theme-map,
-  "dark": $dark-theme-map
+  "dark": $dark-theme-map,
+  "glow": $glow-theme-map,
 );
 
 @mixin themify() {

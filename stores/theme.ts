@@ -6,7 +6,8 @@ export const useThemeStore = defineStore('theme', {
       currentTheme: "light",
       themes: {
         "Classic Light": "light",
-        "Classic Dark": "dark"
+        "Classic Dark": "dark",
+        "Dark Glow": "glow"
       }
     }
   },

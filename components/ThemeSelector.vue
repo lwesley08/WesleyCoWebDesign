@@ -25,13 +25,13 @@
 
   &__fab {
     border-radius: 100%;
-    box-shadow: 6px 6px 5px #aaaaaa;
+    box-shadow: 6px 6px 5px rgba(16, 27, 79, 0.19);
     width: 60px;
     height: 60px;
     background: black;
 
     &--animated {
-      box-shadow: 0px 0px 0px #aaaaaa;
+      box-shadow: 0px 0px 0px rgba(16, 27, 79, 0.19);
       animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
     }
   }
@@ -51,7 +51,7 @@
     margin-bottom: 10px;
     min-height: 80px;
     min-width: 120px;
-    box-shadow: 6px 6px 5px #aaaaaa;
+    box-shadow: 6px 6px 5px rgba(16, 27, 79, 0.19);
     border-radius: 5px;
     padding: 20px 0px;
     display: none;

@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="hero__image-container">
-      <img class="hero__image" src="/HeroImage.png" />
+      <img class="hero__image" :src="heroImage" />
     </div>
   </div>
 </template>
@@ -65,7 +65,6 @@
     }
 
     &--accent {
-      animation: fadeIn 2500ms 100ms ease both;
       display: inline-block;
       font-family: Tangerine;
       font-weight: 400;
@@ -77,6 +76,10 @@
         font-size: 61px;
         line-height: 61px;
         transform: translateY(8px);
+      }
+
+      @include themify() {
+        animation: themed("accent-text-animation");
       }
 
     }
@@ -144,3 +147,23 @@
   }
 }
 </style>
+
+<script lang="ts" setup>
+import { useThemeStore } from '../stores/theme';
+import { storeToRefs } from 'pinia';
+import { ComputedRef } from 'vue';
+
+const themeStore = useThemeStore();
+const { currentTheme } = storeToRefs(themeStore);
+
+const heroImage: ComputedRef<string> = computed(() => {
+  switch (currentTheme.value) {
+    case 'glow':
+      return './GlowingLaptop.png';
+    default:
+      return './HeroImage.png';
+  }
+})
+
+</script>
+

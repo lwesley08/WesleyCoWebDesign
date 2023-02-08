@@ -47,3 +47,12 @@
     opacity: 0;
   }
 }
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px $electric-blue-dark, 0 0 40px $electric-blue-dark, 0 0 50px $electric-blue-dark, 0 0 60px $electric-blue-dark, 0 0 70px $electric-blue-dark;
+  }
+  to {
+    text-shadow: 0 0 20px white, 0 0 30px $electric-blue-light, 0 0 40px $electric-blue-light, 0 0 50px $electric-blue-light, 0 0 60px $electric-blue-light, 0 0 70px $electric-blue-light, 0 0 80px $electric-blue-light;
+  }
+}
