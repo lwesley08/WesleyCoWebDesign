@@ -1,1 +1,1 @@
-### Deployed to wesleyco.libertywesley.com/
+### Deployed to [wesleyco.libertywesley.com](wesleyco.libertywesley.com)
