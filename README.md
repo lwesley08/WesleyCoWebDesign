@@ -1,1 +1,1 @@
-### Deployed to http://wesleyco.libertywesley.com/
+### Deployed to wesleyco.libertywesley.com/
