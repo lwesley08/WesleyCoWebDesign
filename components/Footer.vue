@@ -2,7 +2,7 @@
   <div class="footer">
     <div class="footer__content-container">
       <h3 class="footer__cta-text">Interested in working together? Let’s chat!</h3>
-      <a href="mailto:lwesley@proton.me"><button class="footer__cta">Get In Touch</button></a>
+      <a href="mailto:libertywesley@proton.me"><button class="footer__cta">Get In Touch</button></a>
     </div>
     <div class="footer__copyright">
       <p>Copyright Wesley & Co. 2023</p>

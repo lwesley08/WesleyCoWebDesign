@@ -4,7 +4,7 @@
       <h2 class="hero__title">Modern Designs with a <span class="hero__title--accent">Classic Flair</span></h2>
       <div class="hero__cta-container">
         <a href="#portfolio"><button class="hero__cta hero__cta--portfolio">Past Work</button></a>
-        <a href="mailto:lwesley@proton.me"><button class="hero__cta hero__cta--contact">Get In Touch</button></a>
+        <a href="mailto:libertywesley@proton.me"><button class="hero__cta hero__cta--contact">Get In Touch</button></a>
       </div>
     </div>
     <div class="hero__image-container">
