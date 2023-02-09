@@ -54,6 +54,7 @@
 @mixin backgroundImage($url) {
   background: url($url);
   background-size: 100%;
+  background-repeat: no-repeat;
 
   &:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url($url);
